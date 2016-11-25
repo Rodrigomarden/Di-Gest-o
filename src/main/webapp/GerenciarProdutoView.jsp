@@ -90,10 +90,16 @@
 					<td><%=p.getValor() %></td>
 					<td><%=p.getQnt_pessoas() %></td>
 					<td><%=p.getContem() %></td>
-					<td><a href="gerenciar_produto?operacao=alterar"
-						onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getNome_produto()%>', '<%=p.getValor()%>', '<%=p.getQnt_pessoas()%>', '<%=p.getContem() %>')"><i class="fa fa-undo fa-2x"></i></a></td>
-					<td><a
-						href="gerenciar_produto?operacao=excluir&codigo=<%=p.getCodigo()%>&nome_produto=<%=p.getNome_produto()%>"><i class="fa fa-trash-o fa-2x"></i></a></td>
+					<td>
+						<a href="gerenciar_produto?operacao=alterar" onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getNome_produto()%>', '<%=p.getValor()%>', '<%=p.getQnt_pessoas()%>', '<%=p.getContem() %>')">
+							<i class="fa fa-undo fa-2x"></i>
+						</a>
+					</td>
+					<td>
+						<a href="gerenciar_produto?operacao=excluir&codigo=<%=p.getCodigo()%>&nome_produto=<%=p.getNome_produto()%>">
+							<i class="fa fa-trash-o fa-2x"></i>
+						</a>
+					</td>
 				</tr>
 							<%	}
               			} else {
@@ -107,12 +113,16 @@
 					<td><%=p.getValor() %></td>
 					<td><%=p.getQnt_pessoas() %></td>
 					<td><%=p.getContem() %></td>
-					<td><a href="gerenciar_produto?operacao=alterar"
-						onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getNome_produto()%>', '<%=p.getValor()%>', '<%=p.getQnt_pessoas()%>', '<%=p.getContem() %>')"><img
-							src="Mesas/icAlterarProduto.png" /></a></td>
-					<td><a
-						href="gerenciar_produto?operacao=excluir&codigo=<%=p.getCodigo()%>&nome_produto=<%=p.getNome_produto()%>"><img
-							src="Mesas/icExcluirProduto.png" /></a></td>
+					<td>
+						<a href="gerenciar_produto?operacao=alterar" onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getNome_produto()%>', '<%=p.getValor()%>', '<%=p.getQnt_pessoas()%>', '<%=p.getContem() %>')">
+							<i class="fa fa-undo fa-2x"></i>
+						</a>
+					</td>
+					<td>
+						<a href="gerenciar_produto?operacao=excluir&codigo=<%=p.getCodigo()%>&nome_produto=<%=p.getNome_produto()%>">
+							<i class="fa fa-trash-o fa-2x"></i>
+						</a>
+					</td>
 				</tr>
 				<%						//Busca por codigo não existe.
            						x = false;
@@ -130,12 +140,16 @@
 					<td><%=p.getValor() %></td>
 					<td><%=p.getQnt_pessoas() %></td>
 					<td><%=p.getContem() %></td>
-					<td><a href="gerenciar_produto?operacao=alterar"
-						onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getNome_produto()%>', '<%=p.getValor()%>', '<%=p.getQnt_pessoas()%>', '<%=p.getContem() %>')"><img
-							src="Mesas/icAlterarProduto.png" /></a></td>
-					<td><a
-						href="gerenciar_produto?operacao=excluir&codigo=<%=p.getCodigo()%>&nome_produto=<%=p.getNome_produto()%>"><img
-							src="Mesas/icExcluirProduto.png" /></a></td>
+					<td>
+						<a href="gerenciar_produto?operacao=alterar" onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getNome_produto()%>', '<%=p.getValor()%>', '<%=p.getQnt_pessoas()%>', '<%=p.getContem() %>')">
+							<i class="fa fa-undo fa-2x"></i>
+						</a>
+					</td>
+					<td>
+						<a href="gerenciar_produto?operacao=excluir&codigo=<%=p.getCodigo()%>&nome_produto=<%=p.getNome_produto()%>">
+							<i class="fa fa-trash-o fa-2x"></i>
+						</a>
+					</td>
 				</tr>
 					<%
               				//Busca por produto não existe.
