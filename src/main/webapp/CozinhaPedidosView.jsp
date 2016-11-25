@@ -11,22 +11,36 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Di-Gestï¿½o - Cozinha</title>   
+    <title>Gerenciar Pedidos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Garcom-Mesas/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Garcom-Mesas/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Garcom-Mesas/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Garcom-Mesas/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
 	<script src="js/sscript.js"></script>
 </head>
 
 <body>
-	<h4>Cozinha: </h4>
-	<form>
-		<div>
-			<table class="tabela-produtos-mesa table">
+<div id="wrapper">
+	<div class="container-fluid">
+	<h2>Cozinha: </h2>
+		<form>
+			<table style="text-align: center" class="table table-bordered">
 				<thead>
-					<tr style="background-color: #F2F2F2; font-weight: bold;">
-						<th>Comanda</th>
-	                    <th>Codigo Produto</th>
-	                    <th>Nome</th>
-	                    <th>Quantidade</th>
-	                    <th>Finalizar</th>
+					<tr>
+						<th><center>Comanda</th>
+	                    <th><center>Codigo Produto</th>
+	                    <th><center>Nome</th>
+	                    <th><center>Quantidade</th>
+	                    <th><center>Finalizar</th>
                     </tr>
 				</thead>
 				<tbody>
@@ -39,28 +53,19 @@
                     	<td><%=p.getCodigo_produto() %></td>
                     	<td><%=p.getNomeProduto() %></td>
                     	<td><%=p.getQuantidade() %></td>
-                    	<td><a href="cozinha_pedidos?operacao=finalizar&codigo_comanda=<%=p.getCodigo_comanda()%>&codigo_produto=<%=p.getCodigo_produto()%>"><img src="Mesas/icExcluirProduto.png" /></a></td>
+                    	<td><a class="btn btn-success" href="cozinha_pedidos?operacao=finalizar&codigo_comanda=<%=p.getCodigo_comanda()%>&codigo_produto=<%=p.getCodigo_produto()%>"><i class="fa fa-check"></i></a></td>
                     </tr>
                     <%}} else {%>
                     <tr>
-                    	<td></td>
-                    	<td></td>
-                    	<td>Não há pedidos a serem feitos.</td>
-                    	<td></td>
-                    	<td></td>
+                    	<td colspan="5">Não há pedidos a serem feitos.</td>
                     </tr>
                     <%} %>
 				</tbody>
 			</table>
-			<div class="sair-posicao-LocProd">
-										<button class="sairLoc">
-											<a href="http://localhost:9090/sgr/logout"> <img style="width: 60px;"
-												src="Mesas/icVoltar.png">Sair
-											</a>
-										</button>
-									</div>
-		</div>
-	</form>
+			<a class="btn btn-danger" href="http://localhost:9090/sgr/logout"><i class="fa fa-sign-out"></i>Sair</a>
+		</form>
+	</div>
+</div>
 </body>
 
 </html>

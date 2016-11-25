@@ -47,6 +47,7 @@
 				  <option value="Administrador">Administrador</option>
 				  <option value="Gerente">Gerente</option>
 				  <option value="Garçom">Garçom</option>
+				  <option value="Cozinha">Cozinha</option>
 				</select>
 			</td>
 	      </tr>

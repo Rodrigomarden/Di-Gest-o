@@ -2,7 +2,7 @@
 <%@page import="sgr.Funcionario"%>
 <%@page import="sgr.NovoPedidoDao"%>
 <%@page import="java.util.List"%>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 
     <meta charset="utf-8">
