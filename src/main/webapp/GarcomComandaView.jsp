@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mesas</title>
+    <title>Comanda</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="Garcom-Mesas/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 <body>
 <div id="wrapper">
 	<div class="container-fluid">
-		<h3>Visualizar Comanda Mesa N°: ${comanda_mesa}</h3>
+		<h3>Visualizar Comanda Mesa N°: <input class="form-control" name="num_mesa" type="text" readonly value="${comanda_mesa}" pattern="[0-9]+$" required></h3>
 		<form>
 			<div>
 				<table class="table table-bordered table-condensed">

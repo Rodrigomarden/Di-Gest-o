@@ -17,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Di-Gestï¿½o - Mesas</title>
+    <title>Gerente - Mesas</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="Garcom-Mesas/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="garcom_mesas">Di-Gestï¿½o - Gerente</a>
+                <a class="navbar-brand" href="garcom_mesas">Di-Gestão - Gerente</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -66,7 +66,7 @@
                             <a href="gerente_mesas"><i class="glyphicon glyphicon-cutlery"></i> Mesas</a>
                         </li>
                         <li>
-                        	<a href="gerenciar_produto"><i class="fa fa-times-circle"></i> Gerenciar Produtos</a>
+                        	<a href="gerenciar_produto"><i class="fa fa-pencil"></i> Gerenciar Produtos</a>
                         </li>
                         <li>
                         	<a href="logout"><i class="fa fa-times-circle"></i> Sair</a>
